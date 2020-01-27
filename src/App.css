@@ -1,22 +1,109 @@
-.App {
-  text-align: center;
+body{
+    background-image: url('https://images.pexels.com/photos/275580/pexels-photo-275580.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Pirata One', cursive;
 }
 
-.App-logo {
-  height: 40vmin;
+#pageTitle{
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#displayZone{
+    display: flex;
+    justify-content: center;
 }
 
-.App-link {
-  color: #09d3ac;
+#gameBoard {
+    display: flex;
+    flex-wrap: wrap;
+    height: 620px;
+    width: 620px;
+    box-shadow: 0px 0px 2px black, 0 0 25px papayawhip, 0 0 5px darkkhaki;
+}
+
+.question {
+    height: 120px;
+    width: 120px;
+    border: 2px solid black;
+    background-image: url('images/question.png');
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* .win {
+    height: 120px;
+    width: 120px;
+    border: 2px solid black;
+    background-image: url('./images/winning.gif');
+    background-position: center;
+    background-size: cover;
+}
+
+.lose {
+    height: 120px;
+    width: 120px;
+    border: 2px solid black;
+    background-image: url('./images/cannon.gif');
+    background-color: grey;
+    background-position: bottom;
+    background-size: cover;
+} */
+.neutral {
+    height: 120px;
+    width: 120px;
+    border: 2px solid black;
+    background-image: url('./images/elmo.gif');
+    background-position: center;
+    background-size: cover;
+}
+
+#win {
+    height: 620px;
+    width: 620px;
+    background-image: url('./images/treasure.gif');
+    background-position: center;
+    background-size: cover;
+}
+
+#lose {
+    height: 620px;
+    width: 620px;
+    background-image: url('./images/gameover.gif');
+    background-color: grey;
+    background-position: bottom;
+    background-size: cover;
+}
+
+#neutral {
+    height: 620px;
+    width: 620px;
+    background-image: url('./images/walktheplank.gif');
+    background-position: center;
+    background-size: cover;
+}
+
+.question:hover {
+    background-color: rgba(238, 232, 170, 0.9);
+}
+
+.question:active {
+    box-shadow: inset 0px 0px 18px 1px rgba(0,0,0,0.75);
+}
+
+.clicksleft{
+    text-align: center;
+    border: 2px solid black;
+    padding: 1%;
+    width: 8.2em;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#resetButton {
+    font-size: 20px;
+    font-family: 'Pirata One', cursive;
 }
